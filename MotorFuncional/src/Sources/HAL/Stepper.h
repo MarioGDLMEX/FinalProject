@@ -3,7 +3,7 @@
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*
-* C Include:        stepper.h
+* C Include:        Stepper.h
 * Instance:         RPL_1
 * %version:         1 %
 * %created_by:      Edgar Mosqueda Cardenas
@@ -26,6 +26,7 @@
 #define STEPPER_H
 
 /* Includes */
+#include "typedefs.h"
 /* -------- */
 
 
@@ -34,7 +35,7 @@
 
 /* Types definition */
 /* typedef */
-
+    
 
 /*==================================================*/ 
 /* Declaration of exported constants                */
@@ -69,7 +70,11 @@
 /* ---------------------------------------- */
 
 /* Functions prototypes */
-
+extern void InitMotor(void);
+extern void Management_CAN_message( void );
+extern void Message_OK( void );
+void increase_speedometer(void);
+void decrease_speedometer(void);
 
 /* Functions macros */
 
@@ -78,3 +83,4 @@
 
 
 #endif
+

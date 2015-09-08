@@ -25,8 +25,9 @@
 #ifndef APP_STEPPER_H                               /* To avoid double inclusion */
 #define APP_STEPPER_H
 
+
+
 /* Includes */
-#include "typedefs.h"
 /* -------- */
 
 
@@ -35,7 +36,7 @@
 
 /* Types definition */
 /* typedef */
-    
+
 
 /*==================================================*/ 
 /* Declaration of exported constants                */
@@ -70,11 +71,7 @@
 /* ---------------------------------------- */
 
 /* Functions prototypes */
-extern void InitMotor(void);
-extern void Management_CAN_message( void );
-extern void Message_OK( void );
-void increase_speedometer(void);
-void decrease_speedometer(void);
+
 
 /* Functions macros */
 
@@ -83,5 +80,3 @@ void decrease_speedometer(void);
 
 
 #endif
-
-
